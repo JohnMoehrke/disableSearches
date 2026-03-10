@@ -1,0 +1,381 @@
+{
+    "resourceType": "Bundle",
+    "id": "disable-searches-observation-c",
+    "type": "batch",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-combo-code",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-combo-code",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-combo-code",
+                "version": "4.0.1",
+                "name": "combo-code",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "combo-code",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "Observation.code | Observation.component.code",
+                "xpath": "f:Observation/f:code | f:Observation/f:component/f:code",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-combo-data-absent-reason",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-combo-data-absent-reason",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-combo-data-absent-reason",
+                "version": "4.0.1",
+                "name": "combo-data-absent-reason",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "combo-data-absent-reason",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "Observation.dataAbsentReason | Observation.component.dataAbsentReason",
+                "xpath": "f:Observation/f:dataAbsentReason | f:Observation/f:component/f:dataAbsentReason",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-combo-value-concept",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept",
+                "version": "4.0.1",
+                "name": "combo-value-concept",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "combo-value-concept",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "(Observation.value as CodeableConcept) | (Observation.component.value as CodeableConcept)",
+                "xpath": "f:Observation/f:valueCodeableConcept | f:Observation/f:component/f:valueCodeableConcept",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-combo-value-quantity",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity",
+                "version": "4.0.1",
+                "name": "combo-value-quantity",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "combo-value-quantity",
+                "base": [
+                    "Observation"
+                ],
+                "type": "quantity",
+                "expression": "(Observation.value as Quantity) | (Observation.value as SampledData) | (Observation.component.value as Quantity) | (Observation.component.value as SampledData)",
+                "xpath": "f:Observation/f:valueQuantity | f:Observation/f:valueCodeableConcept | f:Observation/f:valueString | f:Observation/f:valueBoolean | f:Observation/f:valueInteger | f:Observation/f:valueRange | f:Observation/f:valueRatio | f:Observation/f:valueSampledData | f:Observation/f:valueTime | f:Observation/f:valueDateTime | f:Observation/f:valuePeriod",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-component-code",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-component-code",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-component-code",
+                "version": "4.0.1",
+                "name": "component-code",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "component-code",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "Observation.component.code",
+                "xpath": "f:Observation/f:component/f:code",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-component-data-absent-reason",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-component-data-absent-reason",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-component-data-absent-reason",
+                "version": "4.0.1",
+                "name": "component-data-absent-reason",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "component-data-absent-reason",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "Observation.component.dataAbsentReason",
+                "xpath": "f:Observation/f:component/f:dataAbsentReason",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-component-value-concept",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-component-value-concept",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-component-value-concept",
+                "version": "4.0.1",
+                "name": "component-value-concept",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "component-value-concept",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "(Observation.component.value as CodeableConcept)",
+                "xpath": "f:Observation/f:component/f:valueCodeableConcept",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-component-value-quantity",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity",
+                "version": "4.0.1",
+                "name": "component-value-quantity",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "component-value-quantity",
+                "base": [
+                    "Observation"
+                ],
+                "type": "quantity",
+                "expression": "(Observation.component.value as Quantity) | (Observation.component.value as SampledData)",
+                "xpath": "f:Observation/f:component/f:valueQuantity | f:Observation/f:component/f:valueCodeableConcept | f:Observation/f:component/f:valueString | f:Observation/f:component/f:valueBoolean | f:Observation/f:component/f:valueInteger | f:Observation/f:component/f:valueRange | f:Observation/f:component/f:valueRatio | f:Observation/f:component/f:valueSampledData | f:Observation/f:component/f:valueTime | f:Observation/f:component/f:valueDateTime | f:Observation/f:component/f:valuePeriod",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-concept",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-combo-code-value-concept",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-concept",
+                "version": "4.0.1",
+                "name": "combo-code-value-concept",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "combo-code-value-concept",
+                "base": [
+                    "Observation"
+                ],
+                "type": "composite",
+                "expression": "Observation | Observation.component",
+                "xpathUsage": "normal",
+                "multipleOr": false,
+                "component": [
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code",
+                        "expression": "code"
+                    },
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept",
+                        "expression": "value.as(CodeableConcept)"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-quantity",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-combo-code-value-quantity",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-quantity",
+                "version": "4.0.1",
+                "name": "combo-code-value-quantity",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "combo-code-value-quantity",
+                "base": [
+                    "Observation"
+                ],
+                "type": "composite",
+                "expression": "Observation | Observation.component",
+                "xpathUsage": "normal",
+                "multipleOr": false,
+                "component": [
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code",
+                        "expression": "code"
+                    },
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity",
+                        "expression": "value.as(Quantity)"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-component-code-value-concept",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept",
+                "version": "4.0.1",
+                "name": "component-code-value-concept",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "component-code-value-concept",
+                "base": [
+                    "Observation"
+                ],
+                "type": "composite",
+                "expression": "Observation.component",
+                "xpathUsage": "normal",
+                "multipleOr": false,
+                "component": [
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code",
+                        "expression": "code"
+                    },
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-value-concept",
+                        "expression": "value.as(CodeableConcept)"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-component-code-value-quantity",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity",
+                "version": "4.0.1",
+                "name": "component-code-value-quantity",
+                "status": "draft",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "component-code-value-quantity",
+                "base": [
+                    "Observation"
+                ],
+                "type": "composite",
+                "expression": "Observation.component",
+                "xpathUsage": "normal",
+                "multipleOr": false,
+                "component": [
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code",
+                        "expression": "code"
+                    },
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity",
+                        "expression": "value.as(Quantity)"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        }
+    ]
+}

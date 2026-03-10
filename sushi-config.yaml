@@ -1,0 +1,102 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: johnmoehrke.disableSearches.example
+canonical: http://johnmoehrke.github.io/disableSearches
+name: JohnMoehrkeDisableSearches
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2021+
+releaseLabel: ci-build
+publisher:
+  name: John Moehrke (himself)
+  url: http://healthcaresecprivacy.blogspot.com
+  email: JohnMoehrke@gmail.com
+license: CC-BY-SA-4.0
+jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - fsh-generated/resources
+    - input/examples
+#  path-pages:
+#    - input/pagecontent
+#    - fsh-generated/includes
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'false'
+  logging: progress
+  shownav: 'true'
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+
+#dependencies:
+#  hl7.fhir.us.core: 4.0.0
+#  hl7.fhir.us.core: 5.0.x
+#  hl7.fhir.us.core: 6.0.x
+#  hl7.fhir.us.core: 7.0.0
+  
+resources:
+  Bundle/disable-searches:
+    name: Disable Searches on ALL
+    description: "This Bundle resource demonstrates how to disable searches on all resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-min:
+    name: Disable minimal Searches on ALL
+    description: "This Bundle resource demonstrates how to disable searches on all resource type, but only the elements we populate but never search on."
+    exampleBoolean: true
+  Bundle/disable-searches-core:
+    name: Disable Searches on Core
+    description: "This Bundle resource demonstrates how to disable searches on core resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-patient:
+    name: Disable Searches on Patient
+    description: "This Bundle resource demonstrates how to disable searches on the Patient resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-allergy:
+    name: Disable Searches on AllergyIntolerance
+    description: "This Bundle resource demonstrates how to disable searches on the AllergyIntolerance resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-condition:
+    name: Disable Searches on Condition
+    description: "This Bundle resource demonstrates how to disable searches on the condition resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-diagnostic:
+    name: Disable Searches on DiagnosticReport
+    description: "This Bundle resource demonstrates how to disable searches on the DiagnosticReport resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-documentreference:
+    name: Disable Searches on DocumentReference
+    description: "This Bundle resource demonstrates how to disable searches on the DocumentReference resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-immunization:
+    name: Disable Searches on Immunization
+    description: "This Bundle resource demonstrates how to disable searches on the Immunization resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-observation:
+    name: Disable Searches on Observation
+    description: "This Bundle resource demonstrates how to disable searches on the Observation resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-observation-c:
+    name: Disable Searches on Observation Combo and Component
+    description: "This Bundle resource demonstrates how to disable searches on the Observation resource type combo and component elements."
+    exampleBoolean: true
+  Bundle/enable-searches:
+    name: Enable Searches on ALL
+    description: "This Bundle resource demonstrates how to disable the search parameters we do use."
+    exampleBoolean: true
+  Bundle/not-disabled:
+    name: Not Disabled Searches
+    description: "This Bundle are the search parameters we do not need, but will not get disabled if you try. They will indicate they are disabled, but they are not actually disabled."
+    exampleBoolean: true
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Artifacts: artifacts.html

@@ -1,0 +1,608 @@
+{
+    "resourceType": "Bundle",
+    "id": "disable-searches-condition",
+    "type": "batch",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-abatement-age",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-abatement-age",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-abatement-age",
+                "version": "4.0.1",
+                "name": "abatement-age",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "abatement-age",
+                "base": [
+                    "Condition"
+                ],
+                "type": "quantity",
+                "expression": "Condition.abatement.as(Age) | Condition.abatement.as(Range)",
+                "xpath": "f:Condition/f:abatementAge | f:Condition/f:abatementRange",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-abatement-date",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-abatement-date",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-abatement-date",
+                "version": "4.0.1",
+                "name": "abatement-date",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "abatement-date",
+                "base": [
+                    "Condition"
+                ],
+                "type": "date",
+                "expression": "Condition.abatement.as(dateTime) | Condition.abatement.as(Period)",
+                "xpath": "f:Condition/f:abatementDateTime | f:Condition/f:abatementPeriod",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-abatement-string",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-abatement-string",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-abatement-string",
+                "version": "4.0.1",
+                "name": "abatement-string",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "abatement-string",
+                "base": [
+                    "Condition"
+                ],
+                "type": "string",
+                "expression": "Condition.abatement.as(string)",
+                "xpath": "f:Condition/f:abatementString",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-asserter",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-asserter",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-asserter",
+                "version": "4.0.1",
+                "name": "asserter",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "asserter",
+                "base": [
+                    "Condition"
+                ],
+                "type": "reference",
+                "expression": "Condition.asserter",
+                "xpath": "f:Condition/f:asserter",
+                "xpathUsage": "normal",
+                "target": [
+                    "Practitioner",
+                    "Patient",
+                    "PractitionerRole",
+                    "RelatedPerson"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-body-site",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-body-site",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-body-site",
+                "version": "4.0.1",
+                "name": "body-site",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "body-site",
+                "base": [
+                    "Condition"
+                ],
+                "type": "token",
+                "expression": "Condition.bodySite",
+                "xpath": "f:Condition/f:bodySite",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-category",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-category",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-category",
+                "version": "4.0.1",
+                "name": "category",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "category",
+                "base": [
+                    "Condition"
+                ],
+                "type": "token",
+                "expression": "Condition.category",
+                "xpath": "f:Condition/f:category",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-encounter",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-encounter",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-encounter",
+                "version": "4.0.1",
+                "name": "encounter",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "encounter",
+                "base": [
+                    "Condition"
+                ],
+                "type": "reference",
+                "expression": "Condition.encounter",
+                "xpath": "f:Condition/f:encounter",
+                "xpathUsage": "normal",
+                "target": [
+                    "Encounter"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-evidence",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-evidence",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-evidence",
+                "version": "4.0.1",
+                "name": "evidence",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "evidence",
+                "base": [
+                    "Condition"
+                ],
+                "type": "token",
+                "expression": "Condition.evidence.code",
+                "xpath": "f:Condition/f:evidence/f:code",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-evidence-detail",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-evidence-detail",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-evidence-detail",
+                "version": "4.0.1",
+                "name": "evidence-detail",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "evidence-detail",
+                "base": [
+                    "Condition"
+                ],
+                "type": "reference",
+                "expression": "Condition.evidence.detail",
+                "xpath": "f:Condition/f:evidence/f:detail",
+                "xpathUsage": "normal",
+                "target": [
+                    "Account",
+                    "ActivityDefinition",
+                    "AdverseEvent",
+                    "AllergyIntolerance",
+                    "Appointment",
+                    "AppointmentResponse",
+                    "AuditEvent",
+                    "Basic",
+                    "Binary",
+                    "BiologicallyDerivedProduct",
+                    "BodyStructure",
+                    "Bundle",
+                    "CapabilityStatement",
+                    "CarePlan",
+                    "CareTeam",
+                    "CatalogEntry",
+                    "ChargeItem",
+                    "ChargeItemDefinition",
+                    "Claim",
+                    "ClaimResponse",
+                    "ClinicalImpression",
+                    "CodeSystem",
+                    "Communication",
+                    "CommunicationRequest",
+                    "CompartmentDefinition",
+                    "Composition",
+                    "ConceptMap",
+                    "Condition",
+                    "Consent",
+                    "Contract",
+                    "Coverage",
+                    "CoverageEligibilityRequest",
+                    "CoverageEligibilityResponse",
+                    "DetectedIssue",
+                    "Device",
+                    "DeviceDefinition",
+                    "DeviceMetric",
+                    "DeviceRequest",
+                    "DeviceUseStatement",
+                    "DiagnosticReport",
+                    "DocumentManifest",
+                    "DocumentReference",
+                    "EffectEvidenceSynthesis",
+                    "Encounter",
+                    "Endpoint",
+                    "EnrollmentRequest",
+                    "EnrollmentResponse",
+                    "EpisodeOfCare",
+                    "EventDefinition",
+                    "Evidence",
+                    "EvidenceVariable",
+                    "ExampleScenario",
+                    "ExplanationOfBenefit",
+                    "FamilyMemberHistory",
+                    "Flag",
+                    "Goal",
+                    "GraphDefinition",
+                    "Group",
+                    "GuidanceResponse",
+                    "HealthcareService",
+                    "ImagingStudy",
+                    "Immunization",
+                    "ImmunizationEvaluation",
+                    "ImmunizationRecommendation",
+                    "ImplementationGuide",
+                    "InsurancePlan",
+                    "Invoice",
+                    "Library",
+                    "Linkage",
+                    "List",
+                    "Location",
+                    "Measure",
+                    "MeasureReport",
+                    "Media",
+                    "Medication",
+                    "MedicationAdministration",
+                    "MedicationDispense",
+                    "MedicationKnowledge",
+                    "MedicationRequest",
+                    "MedicationStatement",
+                    "MedicinalProduct",
+                    "MedicinalProductAuthorization",
+                    "MedicinalProductContraindication",
+                    "MedicinalProductIndication",
+                    "MedicinalProductIngredient",
+                    "MedicinalProductInteraction",
+                    "MedicinalProductManufactured",
+                    "MedicinalProductPackaged",
+                    "MedicinalProductPharmaceutical",
+                    "MedicinalProductUndesirableEffect",
+                    "MessageDefinition",
+                    "MessageHeader",
+                    "MolecularSequence",
+                    "NamingSystem",
+                    "NutritionOrder",
+                    "Observation",
+                    "ObservationDefinition",
+                    "OperationDefinition",
+                    "OperationOutcome",
+                    "Organization",
+                    "OrganizationAffiliation",
+                    "Patient",
+                    "PaymentNotice",
+                    "PaymentReconciliation",
+                    "Person",
+                    "PlanDefinition",
+                    "Practitioner",
+                    "PractitionerRole",
+                    "Procedure",
+                    "Provenance",
+                    "Questionnaire",
+                    "QuestionnaireResponse",
+                    "RelatedPerson",
+                    "RequestGroup",
+                    "ResearchDefinition",
+                    "ResearchElementDefinition",
+                    "ResearchStudy",
+                    "ResearchSubject",
+                    "RiskAssessment",
+                    "RiskEvidenceSynthesis",
+                    "Schedule",
+                    "SearchParameter",
+                    "ServiceRequest",
+                    "Slot",
+                    "Specimen",
+                    "SpecimenDefinition",
+                    "StructureDefinition",
+                    "StructureMap",
+                    "Subscription",
+                    "Substance",
+                    "SubstanceNucleicAcid",
+                    "SubstancePolymer",
+                    "SubstanceProtein",
+                    "SubstanceReferenceInformation",
+                    "SubstanceSourceMaterial",
+                    "SubstanceSpecification",
+                    "SupplyDelivery",
+                    "SupplyRequest",
+                    "Task",
+                    "TerminologyCapabilities",
+                    "TestReport",
+                    "TestScript",
+                    "ValueSet",
+                    "VerificationResult",
+                    "VisionPrescription"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-onset-age",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-onset-age",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-onset-age",
+                "version": "4.0.1",
+                "name": "onset-age",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "onset-age",
+                "base": [
+                    "Condition"
+                ],
+                "type": "quantity",
+                "expression": "Condition.onset.as(Age) | Condition.onset.as(Range)",
+                "xpath": "f:Condition/f:onsetAge | f:Condition/f:onsetRange",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-onset-date",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-onset-date",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-onset-date",
+                "version": "4.0.1",
+                "name": "onset-date",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "onset-date",
+                "base": [
+                    "Condition"
+                ],
+                "type": "date",
+                "expression": "Condition.onset.as(dateTime) | Condition.onset.as(Period)",
+                "xpath": "f:Condition/f:onsetDateTime | f:Condition/f:onsetPeriod",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-onset-info",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-onset-info",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-onset-info",
+                "version": "4.0.1",
+                "name": "onset-info",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "onset-info",
+                "base": [
+                    "Condition"
+                ],
+                "type": "string",
+                "expression": "Condition.onset.as(string)",
+                "xpath": "f:Condition/f:onsetString",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-recorded-date",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-recorded-date",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-recorded-date",
+                "version": "4.0.1",
+                "name": "recorded-date",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "recorded-date",
+                "base": [
+                    "Condition"
+                ],
+                "type": "date",
+                "expression": "Condition.recordedDate",
+                "xpath": "f:Condition/f:recordedDate",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-severity",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-severity",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-severity",
+                "version": "4.0.1",
+                "name": "severity",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "severity",
+                "base": [
+                    "Condition"
+                ],
+                "type": "token",
+                "expression": "Condition.severity",
+                "xpath": "f:Condition/f:severity",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-stage",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-stage",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-stage",
+                "version": "4.0.1",
+                "name": "stage",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "stage",
+                "base": [
+                    "Condition"
+                ],
+                "type": "token",
+                "expression": "Condition.stage.summary",
+                "xpath": "f:Condition/f:stage/f:summary",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        }
+    ]
+}

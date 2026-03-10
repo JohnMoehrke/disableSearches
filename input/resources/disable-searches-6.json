@@ -1,0 +1,349 @@
+{
+    "resourceType": "Bundle",
+    "id": "disable-searches-immunization",
+    "type": "batch",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-location",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-location",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-location",
+                "version": "4.0.1",
+                "name": "location",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "location",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "reference",
+                "expression": "Immunization.location",
+                "xpath": "f:Immunization/f:location",
+                "xpathUsage": "normal",
+                "target": [
+                    "Location"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-lot-number",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-lot-number",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-lot-number",
+                "version": "4.0.1",
+                "name": "lot-number",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "lot-number",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "string",
+                "expression": "Immunization.lotNumber",
+                "xpath": "f:Immunization/f:lotNumber",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-manufacturer",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-manufacturer",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-manufacturer",
+                "version": "4.0.1",
+                "name": "manufacturer",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "manufacturer",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "reference",
+                "expression": "Immunization.manufacturer",
+                "xpath": "f:Immunization/f:manufacturer",
+                "xpathUsage": "normal",
+                "target": [
+                    "Organization"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-performer",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-performer",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-performer",
+                "version": "4.0.1",
+                "name": "performer",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "performer",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "reference",
+                "expression": "Immunization.performer.actor",
+                "xpath": "f:Immunization/f:performer/f:actor",
+                "xpathUsage": "normal",
+                "target": [
+                    "Practitioner",
+                    "Organization",
+                    "PractitionerRole"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-reaction",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-reaction",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-reaction",
+                "version": "4.0.1",
+                "name": "reaction",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "reaction",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "reference",
+                "expression": "Immunization.reaction.detail",
+                "xpath": "f:Immunization/f:reaction/f:detail",
+                "xpathUsage": "normal",
+                "target": [
+                    "Observation"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-reaction-date",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-reaction-date",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-reaction-date",
+                "version": "4.0.1",
+                "name": "reaction-date",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "reaction-date",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "date",
+                "expression": "Immunization.reaction.date",
+                "xpath": "f:Immunization/f:reaction/f:date",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-reason-code",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-reason-code",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-reason-code",
+                "version": "4.0.1",
+                "name": "reason-code",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "reason-code",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "token",
+                "expression": "Immunization.reasonCode",
+                "xpath": "f:Immunization/f:reasonCode",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-reason-reference",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-reason-reference",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-reason-reference",
+                "version": "4.0.1",
+                "name": "reason-reference",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "reason-reference",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "reference",
+                "expression": "Immunization.reasonReference",
+                "xpath": "f:Immunization/f:reasonReference",
+                "xpathUsage": "normal",
+                "target": [
+                    "Condition",
+                    "Observation",
+                    "DiagnosticReport"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-series",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-series",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-series",
+                "version": "4.0.1",
+                "name": "series",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "series",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "string",
+                "expression": "Immunization.protocolApplied.series",
+                "xpath": "f:Immunization/f:protocolApplied/f:series",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-status-reason",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-status-reason",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-status-reason",
+                "version": "4.0.1",
+                "name": "status-reason",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "status-reason",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "token",
+                "expression": "Immunization.statusReason",
+                "xpath": "f:Immunization/f:statusReason",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-target-disease",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-target-disease",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-target-disease",
+                "version": "4.0.1",
+                "name": "target-disease",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "target-disease",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "token",
+                "expression": "Immunization.protocolApplied.targetDisease",
+                "xpath": "f:Immunization/f:protocolApplied/f:targetDisease",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-vaccine-code",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-vaccine-code",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-vaccine-code",
+                "version": "4.0.1",
+                "name": "vaccine-code",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "vaccine-code",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "token",
+                "expression": "Immunization.vaccineCode",
+                "xpath": "f:Immunization/f:vaccineCode",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        }
+    ]
+}

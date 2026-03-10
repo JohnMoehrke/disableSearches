@@ -1,0 +1,624 @@
+{
+    "resourceType": "Bundle",
+    "id": "enable-searches",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Resource-id",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Resource-id",
+                "url": "http://hl7.org/fhir/SearchParameter/Resource-id",
+                "version": "4.0.1",
+                "name": "_id",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "_id",
+                "base": [
+                    "Resource"
+                ],
+                "type": "token",
+                "expression": "Resource.id",
+                "xpath": "f:Resource/f:id",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Resource-lastUpdated",
+                "url": "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+                "version": "4.0.1",
+                "name": "_lastUpdated",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "_lastUpdated",
+                "base": [
+                    "Resource"
+                ],
+                "type": "date",
+                "expression": "Resource.meta.lastUpdated",
+                "xpath": "f:Resource/f:meta/f:lastUpdated",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-clinical-status",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-clinical-status",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-clinical-status",
+                "version": "4.0.1",
+                "name": "clinical-status",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "clinical-status",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.clinicalStatus",
+                "xpath": "f:AllergyIntolerance/f:clinicalStatus",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "clinical-identifier",
+                "url": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+                "version": "4.0.1",
+                "name": "identifier",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "identifier",
+                "base": [
+                    "AllergyIntolerance",
+                    "CarePlan",
+                    "CareTeam",
+                    "Composition",
+                    "Condition",
+                    "Consent",
+                    "DetectedIssue",
+                    "DeviceRequest",
+                    "DiagnosticReport",
+                    "DocumentManifest",
+                    "DocumentReference",
+                    "Encounter",
+                    "EpisodeOfCare",
+                    "FamilyMemberHistory",
+                    "Goal",
+                    "ImagingStudy",
+                    "Immunization",
+                    "List",
+                    "MedicationAdministration",
+                    "MedicationDispense",
+                    "MedicationRequest",
+                    "MedicationStatement",
+                    "NutritionOrder",
+                    "Observation",
+                    "Procedure",
+                    "RiskAssessment",
+                    "ServiceRequest",
+                    "SupplyDelivery",
+                    "SupplyRequest",
+                    "VisionPrescription"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.identifier | CarePlan.identifier | CareTeam.identifier | Composition.identifier | Condition.identifier | Consent.identifier | DetectedIssue.identifier | DeviceRequest.identifier | DiagnosticReport.identifier | DocumentManifest.masterIdentifier | DocumentManifest.identifier | DocumentReference.masterIdentifier | DocumentReference.identifier | Encounter.identifier | EpisodeOfCare.identifier | FamilyMemberHistory.identifier | Goal.identifier | ImagingStudy.identifier | Immunization.identifier | List.identifier | MedicationAdministration.identifier | MedicationDispense.identifier | MedicationRequest.identifier | MedicationStatement.identifier | NutritionOrder.identifier | Observation.identifier | Procedure.identifier | RiskAssessment.identifier | ServiceRequest.identifier | SupplyDelivery.identifier | SupplyRequest.identifier | VisionPrescription.identifier",
+                "xpath": "f:AllergyIntolerance/f:identifier | f:CarePlan/f:identifier | f:CareTeam/f:identifier | f:Composition/f:identifier | f:Condition/f:identifier | f:Consent/f:identifier | f:DetectedIssue/f:identifier | f:DeviceRequest/f:identifier | f:DiagnosticReport/f:identifier | f:DocumentManifest/f:masterIdentifier | f:DocumentManifest/f:identifier | f:DocumentReference/f:masterIdentifier | f:DocumentReference/f:identifier | f:Encounter/f:identifier | f:EpisodeOfCare/f:identifier | f:FamilyMemberHistory/f:identifier | f:Goal/f:identifier | f:ImagingStudy/f:identifier | f:Immunization/f:identifier | f:List/f:identifier | f:MedicationAdministration/f:identifier | f:MedicationDispense/f:identifier | f:MedicationRequest/f:identifier | f:MedicationStatement/f:identifier | f:NutritionOrder/f:identifier | f:Observation/f:identifier | f:Procedure/f:identifier | f:RiskAssessment/f:identifier | f:ServiceRequest/f:identifier | f:SupplyDelivery/f:identifier | f:SupplyRequest/f:identifier | f:VisionPrescription/f:identifier",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "clinical-patient",
+                "url": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                "version": "4.0.1",
+                "name": "patient",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "patient",
+                "base": [
+                    "AllergyIntolerance",
+                    "CarePlan",
+                    "CareTeam",
+                    "ClinicalImpression",
+                    "Composition",
+                    "Condition",
+                    "Consent",
+                    "DetectedIssue",
+                    "DeviceRequest",
+                    "DeviceUseStatement",
+                    "DiagnosticReport",
+                    "DocumentManifest",
+                    "DocumentReference",
+                    "Encounter",
+                    "EpisodeOfCare",
+                    "FamilyMemberHistory",
+                    "Flag",
+                    "Goal",
+                    "ImagingStudy",
+                    "Immunization",
+                    "List",
+                    "MedicationAdministration",
+                    "MedicationDispense",
+                    "MedicationRequest",
+                    "MedicationStatement",
+                    "NutritionOrder",
+                    "Observation",
+                    "Procedure",
+                    "RiskAssessment",
+                    "ServiceRequest",
+                    "SupplyDelivery",
+                    "VisionPrescription"
+                ],
+                "type": "reference",
+                "expression": "AllergyIntolerance.patient | CarePlan.subject.where(resolve() is Patient) | CareTeam.subject.where(resolve() is Patient) | ClinicalImpression.subject.where(resolve() is Patient) | Composition.subject.where(resolve() is Patient) | Condition.subject.where(resolve() is Patient) | Consent.patient | DetectedIssue.patient | DeviceRequest.subject.where(resolve() is Patient) | DeviceUseStatement.subject | DiagnosticReport.subject.where(resolve() is Patient) | DocumentManifest.subject.where(resolve() is Patient) | DocumentReference.subject.where(resolve() is Patient) | Encounter.subject.where(resolve() is Patient) | EpisodeOfCare.patient | FamilyMemberHistory.patient | Flag.subject.where(resolve() is Patient) | Goal.subject.where(resolve() is Patient) | ImagingStudy.subject.where(resolve() is Patient) | Immunization.patient | List.subject.where(resolve() is Patient) | MedicationAdministration.subject.where(resolve() is Patient) | MedicationDispense.subject.where(resolve() is Patient) | MedicationRequest.subject.where(resolve() is Patient) | MedicationStatement.subject.where(resolve() is Patient) | NutritionOrder.patient | Observation.subject.where(resolve() is Patient) | Procedure.subject.where(resolve() is Patient) | RiskAssessment.subject.where(resolve() is Patient) | ServiceRequest.subject.where(resolve() is Patient) | SupplyDelivery.patient | VisionPrescription.patient",
+                "xpath": "f:AllergyIntolerance/f:patient | f:CarePlan/f:subject | f:CareTeam/f:subject | f:ClinicalImpression/f:subject | f:Composition/f:subject | f:Condition/f:subject | f:Consent/f:patient | f:DetectedIssue/f:patient | f:DeviceRequest/f:subject | f:DeviceUseStatement/f:subject | f:DiagnosticReport/f:subject | f:DocumentManifest/f:subject | f:DocumentReference/f:subject | f:Encounter/f:subject | f:EpisodeOfCare/f:patient | f:FamilyMemberHistory/f:patient | f:Flag/f:subject | f:Goal/f:subject | f:ImagingStudy/f:subject | f:Immunization/f:patient | f:List/f:subject | f:MedicationAdministration/f:subject | f:MedicationDispense/f:subject | f:MedicationRequest/f:subject | f:MedicationStatement/f:subject | f:NutritionOrder/f:patient | f:Observation/f:subject | f:Procedure/f:subject | f:RiskAssessment/f:subject | f:ServiceRequest/f:subject | f:SupplyDelivery/f:patient | f:VisionPrescription/f:patient",
+                "xpathUsage": "normal",
+                "target": [
+                    "Patient",
+                    "Group"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-verification-status",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-verification-status",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-verification-status",
+                "version": "4.0.1",
+                "name": "verification-status",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "verification-status",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.verificationStatus",
+                "xpath": "f:AllergyIntolerance/f:verificationStatus",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-clinical-status",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-clinical-status",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-clinical-status",
+                "version": "4.0.1",
+                "name": "clinical-status",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "clinical-status",
+                "base": [
+                    "Condition"
+                ],
+                "type": "token",
+                "expression": "Condition.clinicalStatus",
+                "xpath": "f:Condition/f:clinicalStatus",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-subject",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-subject",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-subject",
+                "version": "4.0.1",
+                "name": "subject",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "subject",
+                "base": [
+                    "Condition"
+                ],
+                "type": "reference",
+                "expression": "Condition.subject",
+                "xpath": "f:Condition/f:subject",
+                "xpathUsage": "normal",
+                "target": [
+                    "Group",
+                    "Patient"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Condition-verification-status",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Condition-verification-status",
+                "url": "http://hl7.org/fhir/SearchParameter/Condition-verification-status",
+                "version": "4.0.1",
+                "name": "verification-status",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "verification-status",
+                "base": [
+                    "Condition"
+                ],
+                "type": "token",
+                "expression": "Condition.verificationStatus",
+                "xpath": "f:Condition/f:verificationStatus",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-category",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category",
+                "version": "4.0.1",
+                "name": "category",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "category",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "token",
+                "expression": "DiagnosticReport.category",
+                "xpath": "f:DiagnosticReport/f:category",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-status",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-status",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-status",
+                "version": "4.0.1",
+                "name": "status",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "status",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "token",
+                "expression": "DiagnosticReport.status",
+                "xpath": "f:DiagnosticReport/f:status",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-subject",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject",
+                "version": "4.0.1",
+                "name": "subject",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "subject",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "reference",
+                "expression": "DiagnosticReport.subject",
+                "xpath": "f:DiagnosticReport/f:subject",
+                "xpathUsage": "normal",
+                "target": [
+                    "Group",
+                    "Device",
+                    "Patient",
+                    "Location"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
+            "resource": {
+              "resourceType": "SearchParameter",
+              "id": "DocumentReference-category",
+              "url": "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
+              "version": "4.0.1",
+              "name": "category",
+              "status": "retired",
+              "experimental": false,
+              "date": "2019-11-01T09:29:23+11:00",
+              "description": "none",
+              "code": "category",
+              "base": [
+                "DocumentReference"
+              ],
+              "type": "token",
+              "expression": "DocumentReference.category",
+              "xpath": "f:DocumentReference/f:category",
+              "xpathUsage": "normal"
+            },
+            "request": {
+              "method": "POST",
+              "url": "SearchParameter"
+            }
+          },
+          {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DocumentReference-status",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DocumentReference-status",
+                "url": "http://hl7.org/fhir/SearchParameter/DocumentReference-status",
+                "version": "4.0.1",
+                "name": "status",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "status",
+                "base": [
+                    "DocumentReference"
+                ],
+                "type": "token",
+                "expression": "DocumentReference.status",
+                "xpath": "f:DocumentReference/f:status",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DocumentReference-subject",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DocumentReference-subject",
+                "url": "http://hl7.org/fhir/SearchParameter/DocumentReference-subject",
+                "version": "4.0.1",
+                "name": "subject",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "subject",
+                "base": [
+                    "DocumentReference"
+                ],
+                "type": "reference",
+                "expression": "DocumentReference.subject",
+                "xpath": "f:DocumentReference/f:subject",
+                "xpathUsage": "normal",
+                "target": [
+                    "Practitioner",
+                    "Group",
+                    "Device",
+                    "Patient"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Immunization-status",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Immunization-status",
+                "url": "http://hl7.org/fhir/SearchParameter/Immunization-status",
+                "version": "4.0.1",
+                "name": "status",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "status",
+                "base": [
+                    "Immunization"
+                ],
+                "type": "token",
+                "expression": "Immunization.status",
+                "xpath": "f:Immunization/f:status",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-category",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-category",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-category",
+                "version": "4.0.1",
+                "name": "category",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "category",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "Observation.category",
+                "xpath": "f:Observation/f:category",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-status",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-status",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-status",
+                "version": "4.0.1",
+                "name": "status",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "status",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "Observation.status",
+                "xpath": "f:Observation/f:status",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-subject",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-subject",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-subject",
+                "version": "4.0.1",
+                "name": "subject",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "subject",
+                "base": [
+                    "Observation"
+                ],
+                "type": "reference",
+                "expression": "Observation.subject",
+                "xpath": "f:Observation/f:subject",
+                "xpathUsage": "normal",
+                "target": [
+                    "Group",
+                    "Device",
+                    "Patient",
+                    "Location"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Patient-identifier",
+                "url": "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+                "version": "4.0.1",
+                "name": "identifier",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "identifier",
+                "base": [
+                    "Patient"
+                ],
+                "type": "token",
+                "expression": "Patient.identifier",
+                "xpath": "f:Patient/f:identifier",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        }
+    ]
+}

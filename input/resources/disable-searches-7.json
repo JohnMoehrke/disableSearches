@@ -1,0 +1,728 @@
+{
+    "resourceType": "Bundle",
+    "id": "disable-searches-observation",
+    "type": "batch",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-based-on",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-based-on",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-based-on",
+                "version": "4.0.1",
+                "name": "based-on",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "based-on",
+                "base": [
+                    "Observation"
+                ],
+                "type": "reference",
+                "expression": "Observation.basedOn",
+                "xpath": "f:Observation/f:basedOn",
+                "xpathUsage": "normal",
+                "target": [
+                    "CarePlan",
+                    "MedicationRequest",
+                    "NutritionOrder",
+                    "DeviceRequest",
+                    "ServiceRequest",
+                    "ImmunizationRecommendation"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-data-absent-reason",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-data-absent-reason",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-data-absent-reason",
+                "version": "4.0.1",
+                "name": "data-absent-reason",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "data-absent-reason",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "Observation.dataAbsentReason",
+                "xpath": "f:Observation/f:dataAbsentReason",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-derived-from",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-derived-from",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-derived-from",
+                "version": "4.0.1",
+                "name": "derived-from",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "derived-from",
+                "base": [
+                    "Observation"
+                ],
+                "type": "reference",
+                "expression": "Observation.derivedFrom",
+                "xpath": "f:Observation/f:derivedFrom",
+                "xpathUsage": "normal",
+                "target": [
+                    "Media",
+                    "Observation",
+                    "ImagingStudy",
+                    "MolecularSequence",
+                    "QuestionnaireResponse",
+                    "DocumentReference"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-device",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-device",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-device",
+                "version": "4.0.1",
+                "name": "device",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "device",
+                "base": [
+                    "Observation"
+                ],
+                "type": "reference",
+                "expression": "Observation.device",
+                "xpath": "f:Observation/f:device",
+                "xpathUsage": "normal",
+                "target": [
+                    "Device",
+                    "DeviceMetric"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-focus",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-focus",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-focus",
+                "version": "4.0.1",
+                "name": "focus",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "focus",
+                "base": [
+                    "Observation"
+                ],
+                "type": "reference",
+                "expression": "Observation.focus",
+                "xpath": "f:Observation/f:focus",
+                "xpathUsage": "normal",
+                "target": [
+                    "Account",
+                    "ActivityDefinition",
+                    "AdverseEvent",
+                    "AllergyIntolerance",
+                    "Appointment",
+                    "AppointmentResponse",
+                    "AuditEvent",
+                    "Basic",
+                    "Binary",
+                    "BiologicallyDerivedProduct",
+                    "BodyStructure",
+                    "Bundle",
+                    "CapabilityStatement",
+                    "CarePlan",
+                    "CareTeam",
+                    "CatalogEntry",
+                    "ChargeItem",
+                    "ChargeItemDefinition",
+                    "Claim",
+                    "ClaimResponse",
+                    "ClinicalImpression",
+                    "CodeSystem",
+                    "Communication",
+                    "CommunicationRequest",
+                    "CompartmentDefinition",
+                    "Composition",
+                    "ConceptMap",
+                    "Condition",
+                    "Consent",
+                    "Contract",
+                    "Coverage",
+                    "CoverageEligibilityRequest",
+                    "CoverageEligibilityResponse",
+                    "DetectedIssue",
+                    "Device",
+                    "DeviceDefinition",
+                    "DeviceMetric",
+                    "DeviceRequest",
+                    "DeviceUseStatement",
+                    "DiagnosticReport",
+                    "DocumentManifest",
+                    "DocumentReference",
+                    "EffectEvidenceSynthesis",
+                    "Encounter",
+                    "Endpoint",
+                    "EnrollmentRequest",
+                    "EnrollmentResponse",
+                    "EpisodeOfCare",
+                    "EventDefinition",
+                    "Evidence",
+                    "EvidenceVariable",
+                    "ExampleScenario",
+                    "ExplanationOfBenefit",
+                    "FamilyMemberHistory",
+                    "Flag",
+                    "Goal",
+                    "GraphDefinition",
+                    "Group",
+                    "GuidanceResponse",
+                    "HealthcareService",
+                    "ImagingStudy",
+                    "Immunization",
+                    "ImmunizationEvaluation",
+                    "ImmunizationRecommendation",
+                    "ImplementationGuide",
+                    "InsurancePlan",
+                    "Invoice",
+                    "Library",
+                    "Linkage",
+                    "List",
+                    "Location",
+                    "Measure",
+                    "MeasureReport",
+                    "Media",
+                    "Medication",
+                    "MedicationAdministration",
+                    "MedicationDispense",
+                    "MedicationKnowledge",
+                    "MedicationRequest",
+                    "MedicationStatement",
+                    "MedicinalProduct",
+                    "MedicinalProductAuthorization",
+                    "MedicinalProductContraindication",
+                    "MedicinalProductIndication",
+                    "MedicinalProductIngredient",
+                    "MedicinalProductInteraction",
+                    "MedicinalProductManufactured",
+                    "MedicinalProductPackaged",
+                    "MedicinalProductPharmaceutical",
+                    "MedicinalProductUndesirableEffect",
+                    "MessageDefinition",
+                    "MessageHeader",
+                    "MolecularSequence",
+                    "NamingSystem",
+                    "NutritionOrder",
+                    "Observation",
+                    "ObservationDefinition",
+                    "OperationDefinition",
+                    "OperationOutcome",
+                    "Organization",
+                    "OrganizationAffiliation",
+                    "Patient",
+                    "PaymentNotice",
+                    "PaymentReconciliation",
+                    "Person",
+                    "PlanDefinition",
+                    "Practitioner",
+                    "PractitionerRole",
+                    "Procedure",
+                    "Provenance",
+                    "Questionnaire",
+                    "QuestionnaireResponse",
+                    "RelatedPerson",
+                    "RequestGroup",
+                    "ResearchDefinition",
+                    "ResearchElementDefinition",
+                    "ResearchStudy",
+                    "ResearchSubject",
+                    "RiskAssessment",
+                    "RiskEvidenceSynthesis",
+                    "Schedule",
+                    "SearchParameter",
+                    "ServiceRequest",
+                    "Slot",
+                    "Specimen",
+                    "SpecimenDefinition",
+                    "StructureDefinition",
+                    "StructureMap",
+                    "Subscription",
+                    "Substance",
+                    "SubstanceNucleicAcid",
+                    "SubstancePolymer",
+                    "SubstanceProtein",
+                    "SubstanceReferenceInformation",
+                    "SubstanceSourceMaterial",
+                    "SubstanceSpecification",
+                    "SupplyDelivery",
+                    "SupplyRequest",
+                    "Task",
+                    "TerminologyCapabilities",
+                    "TestReport",
+                    "TestScript",
+                    "ValueSet",
+                    "VerificationResult",
+                    "VisionPrescription"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-has-member",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-has-member",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-has-member",
+                "version": "4.0.1",
+                "name": "has-member",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "has-member",
+                "base": [
+                    "Observation"
+                ],
+                "type": "reference",
+                "expression": "Observation.hasMember",
+                "xpath": "f:Observation/f:hasMember",
+                "xpathUsage": "normal",
+                "target": [
+                    "Observation",
+                    "MolecularSequence",
+                    "QuestionnaireResponse"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-method",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-method",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-method",
+                "version": "4.0.1",
+                "name": "method",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "method",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "Observation.method",
+                "xpath": "f:Observation/f:method",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-part-of",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-part-of",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-part-of",
+                "version": "4.0.1",
+                "name": "part-of",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "part-of",
+                "base": [
+                    "Observation"
+                ],
+                "type": "reference",
+                "expression": "Observation.partOf",
+                "xpath": "f:Observation/f:partOf",
+                "xpathUsage": "normal",
+                "target": [
+                    "Immunization",
+                    "MedicationDispense",
+                    "MedicationAdministration",
+                    "Procedure",
+                    "ImagingStudy",
+                    "MedicationStatement"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-performer",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-performer",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-performer",
+                "version": "4.0.1",
+                "name": "performer",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "performer",
+                "base": [
+                    "Observation"
+                ],
+                "type": "reference",
+                "expression": "Observation.performer",
+                "xpath": "f:Observation/f:performer",
+                "xpathUsage": "normal",
+                "target": [
+                    "Practitioner",
+                    "Organization",
+                    "CareTeam",
+                    "Patient",
+                    "PractitionerRole",
+                    "RelatedPerson"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-specimen",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-specimen",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-specimen",
+                "version": "4.0.1",
+                "name": "specimen",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "specimen",
+                "base": [
+                    "Observation"
+                ],
+                "type": "reference",
+                "expression": "Observation.specimen",
+                "xpath": "f:Observation/f:specimen",
+                "xpathUsage": "normal",
+                "target": [
+                    "Specimen"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-value-concept",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
+                "version": "4.0.1",
+                "name": "value-concept",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "value-concept",
+                "base": [
+                    "Observation"
+                ],
+                "type": "token",
+                "expression": "(Observation.value as CodeableConcept)",
+                "xpath": "f:Observation/f:valueCodeableConcept",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-value-date",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-value-date",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-value-date",
+                "version": "4.0.1",
+                "name": "value-date",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "value-date",
+                "base": [
+                    "Observation"
+                ],
+                "type": "date",
+                "expression": "(Observation.value as dateTime) | (Observation.value as Period)",
+                "xpath": "f:Observation/f:valueDateTime | f:Observation/f:valuePeriod",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-value-quantity",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-value-quantity",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-value-quantity",
+                "version": "4.0.1",
+                "name": "value-quantity",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "value-quantity",
+                "base": [
+                    "Observation"
+                ],
+                "type": "quantity",
+                "expression": "(Observation.value as Quantity) | (Observation.value as SampledData)",
+                "xpath": "f:Observation/f:valueQuantity | f:Observation/f:valueCodeableConcept | f:Observation/f:valueString | f:Observation/f:valueBoolean | f:Observation/f:valueInteger | f:Observation/f:valueRange | f:Observation/f:valueRatio | f:Observation/f:valueSampledData | f:Observation/f:valueTime | f:Observation/f:valueDateTime | f:Observation/f:valuePeriod",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-value-string",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-value-string",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-value-string",
+                "version": "4.0.1",
+                "name": "value-string",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "value-string",
+                "base": [
+                    "Observation"
+                ],
+                "type": "string",
+                "expression": "(Observation.value as string) | (Observation.value as CodeableConcept).text",
+                "xpath": "f:Observation/f:valueQuantity | f:Observation/f:valueCodeableConcept | f:Observation/f:valueString | f:Observation/f:valueBoolean | f:Observation/f:valueInteger | f:Observation/f:valueRange | f:Observation/f:valueRatio | f:Observation/f:valueSampledData | f:Observation/f:valueTime | f:Observation/f:valueDateTime | f:Observation/f:valuePeriod",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-code-value-concept",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept",
+                "version": "4.0.1",
+                "name": "code-value-concept",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "code-value-concept",
+                "base": [
+                    "Observation"
+                ],
+                "type": "composite",
+                "expression": "Observation",
+                "xpathUsage": "normal",
+                "multipleOr": false,
+                "component": [
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                        "expression": "code"
+                    },
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
+                        "expression": "value.as(CodeableConcept)"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-code-value-date",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-code-value-date",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-code-value-date",
+                "version": "4.0.1",
+                "name": "code-value-date",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "code-value-date",
+                "base": [
+                    "Observation"
+                ],
+                "type": "composite",
+                "expression": "Observation",
+                "xpathUsage": "normal",
+                "multipleOr": false,
+                "component": [
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                        "expression": "code"
+                    },
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-date",
+                        "expression": "value.as(DateTime) | value.as(Period)"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-code-value-quantity",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity",
+                "version": "4.0.1",
+                "name": "code-value-quantity",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "code-value-quantity",
+                "base": [
+                    "Observation"
+                ],
+                "type": "composite",
+                "expression": "Observation",
+                "xpathUsage": "normal",
+                "multipleOr": false,
+                "component": [
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                        "expression": "code"
+                    },
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-quantity",
+                        "expression": "value.as(Quantity)"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-code-value-string",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Observation-code-value-string",
+                "url": "http://hl7.org/fhir/SearchParameter/Observation-code-value-string",
+                "version": "4.0.1",
+                "name": "code-value-string",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none.",
+                "code": "code-value-string",
+                "base": [
+                    "Observation"
+                ],
+                "type": "composite",
+                "expression": "Observation",
+                "xpathUsage": "normal",
+                "multipleOr": false,
+                "component": [
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                        "expression": "code"
+                    },
+                    {
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-string",
+                        "expression": "value.as(string)"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        }
+    ]
+}

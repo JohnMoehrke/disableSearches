@@ -1,0 +1,254 @@
+{
+    "resourceType": "Bundle",
+    "id": "disable-searches-diagnostic",
+    "type": "batch",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-based-on",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-based-on",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-based-on",
+                "version": "4.0.1",
+                "name": "based-on",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "based-on",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "reference",
+                "expression": "DiagnosticReport.basedOn",
+                "xpath": "f:DiagnosticReport/f:basedOn",
+                "xpathUsage": "normal",
+                "target": [
+                    "CarePlan",
+                    "MedicationRequest",
+                    "NutritionOrder",
+                    "ServiceRequest",
+                    "ImmunizationRecommendation"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-conclusion",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion",
+                "version": "4.0.1",
+                "name": "conclusion",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "conclusion",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "token",
+                "expression": "DiagnosticReport.conclusionCode",
+                "xpath": "f:DiagnosticReport/f:conclusionCode",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-issued",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-issued",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-issued",
+                "version": "4.0.1",
+                "name": "issued",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "issued",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "date",
+                "expression": "DiagnosticReport.issued",
+                "xpath": "f:DiagnosticReport/f:issued",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-media",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-media",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-media",
+                "version": "4.0.1",
+                "name": "media",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "media",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "reference",
+                "expression": "DiagnosticReport.media.link",
+                "xpath": "f:DiagnosticReport/f:media/f:link",
+                "xpathUsage": "normal",
+                "target": [
+                    "Media"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-performer",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-performer",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-performer",
+                "version": "4.0.1",
+                "name": "performer",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "performer",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "reference",
+                "expression": "DiagnosticReport.performer",
+                "xpath": "f:DiagnosticReport/f:performer",
+                "xpathUsage": "normal",
+                "target": [
+                    "Practitioner",
+                    "Organization",
+                    "CareTeam",
+                    "PractitionerRole"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-result",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-result",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-result",
+                "version": "4.0.1",
+                "name": "result",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "result",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "reference",
+                "expression": "DiagnosticReport.result",
+                "xpath": "f:DiagnosticReport/f:result",
+                "xpathUsage": "normal",
+                "target": [
+                    "Observation"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-results-interpreter",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-results-interpreter",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-results-interpreter",
+                "version": "4.0.1",
+                "name": "results-interpreter",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "results-interpreter",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "reference",
+                "expression": "DiagnosticReport.resultsInterpreter",
+                "xpath": "f:DiagnosticReport/f:resultsInterpreter",
+                "xpathUsage": "normal",
+                "target": [
+                    "Practitioner",
+                    "Organization",
+                    "CareTeam",
+                    "PractitionerRole"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-specimen",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DiagnosticReport-specimen",
+                "url": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-specimen",
+                "version": "4.0.1",
+                "name": "specimen",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "specimen",
+                "base": [
+                    "DiagnosticReport"
+                ],
+                "type": "reference",
+                "expression": "DiagnosticReport.specimen",
+                "xpath": "f:DiagnosticReport/f:specimen",
+                "xpathUsage": "normal",
+                "target": [
+                    "Specimen"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        }
+    ]
+}

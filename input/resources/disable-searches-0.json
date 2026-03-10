@@ -1,0 +1,306 @@
+{
+    "resourceType": "Bundle",
+    "id": "disable-searches-core",
+    "type": "batch",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/DomainResource-text",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "DomainResource-text",
+                "url": "http://hl7.org/fhir/SearchParameter/DomainResource-text",
+                "version": "4.0.1",
+                "name": "_text",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "_text",
+                "base": [
+                    "Resource"
+                ],
+                "type": "string",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Resource-content",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Resource-content",
+                "url": "http://hl7.org/fhir/SearchParameter/Resource-content",
+                "version": "4.0.1",
+                "name": "_content",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "_content",
+                "base": [
+                    "Resource"
+                ],
+                "type": "string",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Resource-profile",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Resource-profile",
+                "url": "http://hl7.org/fhir/SearchParameter/Resource-profile",
+                "version": "4.0.1",
+                "name": "_profile",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "_profile",
+                "base": [
+                    "Resource"
+                ],
+                "type": "uri",
+                "expression": "Resource.meta.profile",
+                "xpath": "f:Resource/f:meta/f:profile",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Resource-query",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Resource-query",
+                "url": "http://hl7.org/fhir/SearchParameter/Resource-query",
+                "version": "4.0.1",
+                "name": "_query",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "_query",
+                "base": [
+                    "Resource"
+                ],
+                "type": "token",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Resource-security",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Resource-security",
+                "url": "http://hl7.org/fhir/SearchParameter/Resource-security",
+                "version": "4.0.1",
+                "name": "_security",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "_security",
+                "base": [
+                    "Resource"
+                ],
+                "type": "token",
+                "expression": "Resource.meta.security",
+                "xpath": "f:Resource/f:meta/f:security",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Resource-source",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Resource-source",
+                "url": "http://hl7.org/fhir/SearchParameter/Resource-source",
+                "version": "4.0.1",
+                "name": "_source",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "_source",
+                "base": [
+                    "Resource"
+                ],
+                "type": "uri",
+                "expression": "Resource.meta.source",
+                "xpath": "f:Resource/f:meta/f:source",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Resource-tag",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Resource-tag",
+                "url": "http://hl7.org/fhir/SearchParameter/Resource-tag",
+                "version": "4.0.1",
+                "name": "_tag",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "_tag",
+                "base": [
+                    "Resource"
+                ],
+                "type": "token",
+                "expression": "Resource.meta.tag",
+                "xpath": "f:Resource/f:meta/f:tag",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/clinical-type",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "clinical-type",
+                "url": "http://hl7.org/fhir/SearchParameter/clinical-type",
+                "version": "4.0.1",
+                "name": "type",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "type",
+                "base": [
+                    "AllergyIntolerance",
+                    "Composition",
+                    "DocumentManifest",
+                    "DocumentReference",
+                    "Encounter",
+                    "EpisodeOfCare"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.type | Composition.type | DocumentManifest.type | DocumentReference.type | Encounter.type | EpisodeOfCare.type",
+                "xpath": "f:AllergyIntolerance/f:type | f:Composition/f:type | f:DocumentManifest/f:type | f:DocumentReference/f:type | f:Encounter/f:type | f:EpisodeOfCare/f:type",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/clinical-date",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "clinical-date",
+                "url": "http://hl7.org/fhir/SearchParameter/clinical-date",
+                "version": "4.0.1",
+                "name": "date",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "date",
+                "base": [
+                    "AllergyIntolerance",
+                    "CarePlan",
+                    "CareTeam",
+                    "ClinicalImpression",
+                    "Composition",
+                    "Consent",
+                    "DiagnosticReport",
+                    "Encounter",
+                    "EpisodeOfCare",
+                    "FamilyMemberHistory",
+                    "Flag",
+                    "Immunization",
+                    "List",
+                    "Observation",
+                    "Procedure",
+                    "RiskAssessment",
+                    "SupplyRequest"
+                ],
+                "type": "date",
+                "expression": "AllergyIntolerance.recordedDate | CarePlan.period | CareTeam.period | ClinicalImpression.date | Composition.date | Consent.dateTime | DiagnosticReport.effective | Encounter.period | EpisodeOfCare.period | FamilyMemberHistory.date | Flag.period | Immunization.occurrence | List.date | Observation.effective | Procedure.performed | (RiskAssessment.occurrence as dateTime) | SupplyRequest.authoredOn",
+                "xpath": "f:AllergyIntolerance/f:recordedDate | f:CarePlan/f:period | f:CareTeam/f:period | f:ClinicalImpression/f:date | f:Composition/f:date | f:Consent/f:dateTime | f:DiagnosticReport/f:effectiveDateTime | f:DiagnosticReport/f:effectivePeriod | f:Encounter/f:period | f:EpisodeOfCare/f:period | f:FamilyMemberHistory/f:date | f:Flag/f:period | f:Immunization/f:occurrenceDateTime | f:Immunization/f:occurrenceString | f:List/f:date | f:Observation/f:effectiveDateTime | f:Observation/f:effectivePeriod | f:Observation/f:effectiveTiming | f:Observation/f:effectiveInstant | f:Procedure/f:performedDateTime | f:Procedure/f:performedPeriod | f:Procedure/f:performedString | f:Procedure/f:performedAge | f:Procedure/f:performedRange | f:RiskAssessment/f:occurrenceDateTime | f:SupplyRequest/f:authoredOn",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/clinical-code",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "clinical-code",
+                "url": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                "version": "4.0.1",
+                "name": "code",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "code",
+                "base": [
+                    "AllergyIntolerance",
+                    "Condition",
+                    "DeviceRequest",
+                    "DiagnosticReport",
+                    "FamilyMemberHistory",
+                    "List",
+                    "Medication",
+                    "MedicationAdministration",
+                    "MedicationDispense",
+                    "MedicationRequest",
+                    "MedicationStatement",
+                    "Observation",
+                    "Procedure",
+                    "ServiceRequest"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.code | AllergyIntolerance.reaction.substance | Condition.code | (DeviceRequest.code as CodeableConcept) | DiagnosticReport.code | FamilyMemberHistory.condition.code | List.code | Medication.code | (MedicationAdministration.medication as CodeableConcept) | (MedicationDispense.medication as CodeableConcept) | (MedicationRequest.medication as CodeableConcept) | (MedicationStatement.medication as CodeableConcept) | Observation.code | Procedure.code | ServiceRequest.code",
+                "xpath": "f:AllergyIntolerance/f:code | f:AllergyIntolerance/f:reaction/f:substance | f:Condition/f:code | f:DeviceRequest/f:codeCodeableConcept | f:DiagnosticReport/f:code | f:FamilyMemberHistory/f:condition/f:code | f:List/f:code | f:Medication/f:code | f:MedicationAdministration/f:medicationCodeableConcept | f:MedicationDispense/f:medicationCodeableConcept | f:MedicationRequest/f:medicationCodeableConcept | f:MedicationStatement/f:medicationCodeableConcept | f:Observation/f:code | f:Procedure/f:code | f:ServiceRequest/f:code",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        }
+    ]
+}

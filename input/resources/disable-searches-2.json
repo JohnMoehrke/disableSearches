@@ -1,0 +1,275 @@
+{
+    "resourceType": "Bundle",
+    "id": "disable-searches-allergy",
+    "type": "batch",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-asserter",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-asserter",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-asserter",
+                "version": "4.0.1",
+                "name": "asserter",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "asserter",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "reference",
+                "expression": "AllergyIntolerance.asserter",
+                "xpath": "f:AllergyIntolerance/f:asserter",
+                "xpathUsage": "normal",
+                "target": [
+                    "Practitioner",
+                    "Patient",
+                    "PractitionerRole",
+                    "RelatedPerson"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-category",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-category",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-category",
+                "version": "4.0.1",
+                "name": "category",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "category",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.category",
+                "xpath": "f:AllergyIntolerance/f:category",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-criticality",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-criticality",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-criticality",
+                "version": "4.0.1",
+                "name": "criticality",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "criticality",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.criticality",
+                "xpath": "f:AllergyIntolerance/f:criticality",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-last-date",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-last-date",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-last-date",
+                "version": "4.0.1",
+                "name": "last-date",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "last-date",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "date",
+                "expression": "AllergyIntolerance.lastOccurrence",
+                "xpath": "f:AllergyIntolerance/f:lastOccurrence",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-manifestation",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-manifestation",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-manifestation",
+                "version": "4.0.1",
+                "name": "manifestation",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "manifestation",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.reaction.manifestation",
+                "xpath": "f:AllergyIntolerance/f:reaction/f:manifestation",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-onset",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-onset",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-onset",
+                "version": "4.0.1",
+                "name": "onset",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "onset",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "date",
+                "expression": "AllergyIntolerance.reaction.onset",
+                "xpath": "f:AllergyIntolerance/f:reaction/f:onset",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-recorder",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-recorder",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-recorder",
+                "version": "4.0.1",
+                "name": "recorder",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "recorder",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "reference",
+                "expression": "AllergyIntolerance.recorder",
+                "xpath": "f:AllergyIntolerance/f:recorder",
+                "xpathUsage": "normal",
+                "target": [
+                    "Practitioner",
+                    "Patient",
+                    "PractitionerRole",
+                    "RelatedPerson"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-route",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-route",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-route",
+                "version": "4.0.1",
+                "name": "route",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "route",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.reaction.exposureRoute",
+                "xpath": "f:AllergyIntolerance/f:reaction/f:exposureRoute",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-severity",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "AllergyIntolerance-severity",
+                "url": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-severity",
+                "version": "4.0.1",
+                "name": "severity",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "severity",
+                "base": [
+                    "AllergyIntolerance"
+                ],
+                "type": "token",
+                "expression": "AllergyIntolerance.reaction.severity",
+                "xpath": "f:AllergyIntolerance/f:reaction/f:severity",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        }
+    ]
+}

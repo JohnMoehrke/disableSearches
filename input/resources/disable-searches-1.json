@@ -1,0 +1,653 @@
+{
+    "resourceType": "Bundle",
+    "id": "disable-searches-patient",
+    "type": "batch",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Patient-active",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Patient-active",
+                "url": "http://hl7.org/fhir/SearchParameter/Patient-active",
+                "version": "4.0.1",
+                "name": "active",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "active",
+                "base": [
+                    "Patient"
+                ],
+                "type": "token",
+                "expression": "Patient.active",
+                "xpath": "f:Patient/f:active",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-address",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-address",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-address",
+                "version": "4.0.1",
+                "name": "address",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "address",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "RelatedPerson"
+                ],
+                "type": "string",
+                "expression": "Patient.address | Person.address | Practitioner.address | RelatedPerson.address",
+                "xpath": "f:Patient/f:address | f:Person/f:address | f:Practitioner/f:address | f:RelatedPerson/f:address",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-address-city",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-address-city",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-address-city",
+                "version": "4.0.1",
+                "name": "address-city",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "address-city",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "RelatedPerson"
+                ],
+                "type": "string",
+                "expression": "Patient.address.city | Person.address.city | Practitioner.address.city | RelatedPerson.address.city",
+                "xpath": "f:Patient/f:address/f:city | f:Person/f:address/f:city | f:Practitioner/f:address/f:city | f:RelatedPerson/f:address/f:city",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-address-country",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-address-country",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-address-country",
+                "version": "4.0.1",
+                "name": "address-country",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "address-country",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "RelatedPerson"
+                ],
+                "type": "string",
+                "expression": "Patient.address.country | Person.address.country | Practitioner.address.country | RelatedPerson.address.country",
+                "xpath": "f:Patient/f:address/f:country | f:Person/f:address/f:country | f:Practitioner/f:address/f:country | f:RelatedPerson/f:address/f:country",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-address-postalcode",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-address-postalcode",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-address-postalcode",
+                "version": "4.0.1",
+                "name": "address-postalcode",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "address-postalcode",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "RelatedPerson"
+                ],
+                "type": "string",
+                "expression": "Patient.address.postalCode | Person.address.postalCode | Practitioner.address.postalCode | RelatedPerson.address.postalCode",
+                "xpath": "f:Patient/f:address/f:postalCode | f:Person/f:address/f:postalCode | f:Practitioner/f:address/f:postalCode | f:RelatedPerson/f:address/f:postalCode",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-address-state",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-address-state",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-address-state",
+                "version": "4.0.1",
+                "name": "address-state",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "address-state",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "RelatedPerson"
+                ],
+                "type": "string",
+                "expression": "Patient.address.state | Person.address.state | Practitioner.address.state | RelatedPerson.address.state",
+                "xpath": "f:Patient/f:address/f:state | f:Person/f:address/f:state | f:Practitioner/f:address/f:state | f:RelatedPerson/f:address/f:state",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-address-use",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-address-use",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-address-use",
+                "version": "4.0.1",
+                "name": "address-use",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "address-use",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "RelatedPerson"
+                ],
+                "type": "token",
+                "expression": "Patient.address.use | Person.address.use | Practitioner.address.use | RelatedPerson.address.use",
+                "xpath": "f:Patient/f:address/f:use | f:Person/f:address/f:use | f:Practitioner/f:address/f:use | f:RelatedPerson/f:address/f:use",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-birthdate",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-birthdate",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-birthdate",
+                "version": "4.0.1",
+                "name": "birthdate",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "birthdate",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "RelatedPerson"
+                ],
+                "type": "date",
+                "expression": "Patient.birthDate | Person.birthDate | RelatedPerson.birthDate",
+                "xpath": "f:Patient/f:birthDate | f:Person/f:birthDate | f:RelatedPerson/f:birthDate",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Patient-death-date",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Patient-death-date",
+                "url": "http://hl7.org/fhir/SearchParameter/Patient-death-date",
+                "version": "4.0.1",
+                "name": "death-date",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "death-date",
+                "base": [
+                    "Patient"
+                ],
+                "type": "date",
+                "expression": "(Patient.deceased as dateTime)",
+                "xpath": "f:Patient/f:deceasedDateTime",
+                "xpathUsage": "normal",
+                "comparator": [
+                    "eq",
+                    "ne",
+                    "gt",
+                    "ge",
+                    "lt",
+                    "le",
+                    "sa",
+                    "eb",
+                    "ap"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Patient-deceased",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Patient-deceased",
+                "url": "http://hl7.org/fhir/SearchParameter/Patient-deceased",
+                "version": "4.0.1",
+                "name": "deceased",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "deceased",
+                "base": [
+                    "Patient"
+                ],
+                "type": "token",
+                "expression": "Patient.deceased.exists() and Patient.deceased != false",
+                "xpath": "f:Patient/f:deceasedBoolean | f:Patient/f:deceasedDateTime",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-email",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-email",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-email",
+                "version": "4.0.1",
+                "name": "email",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "email",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "PractitionerRole",
+                    "RelatedPerson"
+                ],
+                "type": "token",
+                "expression": "Patient.telecom.where(system='email') | Person.telecom.where(system='email') | Practitioner.telecom.where(system='email') | PractitionerRole.telecom.where(system='email') | RelatedPerson.telecom.where(system='email')",
+                "xpath": "f:Patient/f:telecom[system/@value='email'] | f:Person/f:telecom[system/@value='email'] | f:Practitioner/f:telecom[system/@value='email'] | f:PractitionerRole/f:telecom[system/@value='email'] | f:RelatedPerson/f:telecom[system/@value='email']",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-family",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-family",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-family",
+                "version": "4.0.1",
+                "name": "family",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "family",
+                "base": [
+                    "Patient",
+                    "Practitioner"
+                ],
+                "type": "string",
+                "expression": "Patient.name.family | Practitioner.name.family",
+                "xpath": "f:Patient/f:name/f:family | f:Practitioner/f:name/f:family",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-gender",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-gender",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-gender",
+                "version": "4.0.1",
+                "name": "gender",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "gender",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "RelatedPerson"
+                ],
+                "type": "token",
+                "expression": "Patient.gender | Person.gender | Practitioner.gender | RelatedPerson.gender",
+                "xpath": "f:Patient/f:gender | f:Person/f:gender | f:Practitioner/f:gender | f:RelatedPerson/f:gender",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Patient-general-practitioner",
+                "url": "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner",
+                "version": "4.0.1",
+                "name": "general-practitioner",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "general-practitioner",
+                "base": [
+                    "Patient"
+                ],
+                "type": "reference",
+                "expression": "Patient.generalPractitioner",
+                "xpath": "f:Patient/f:generalPractitioner",
+                "xpathUsage": "normal",
+                "target": [
+                    "Practitioner",
+                    "Organization",
+                    "PractitionerRole"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-given",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-given",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-given",
+                "version": "4.0.1",
+                "name": "given",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "given",
+                "base": [
+                    "Patient",
+                    "Practitioner"
+                ],
+                "type": "string",
+                "expression": "Patient.name.given | Practitioner.name.given",
+                "xpath": "f:Patient/f:name/f:given | f:Practitioner/f:name/f:given",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Patient-language",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Patient-language",
+                "url": "http://hl7.org/fhir/SearchParameter/Patient-language",
+                "version": "4.0.1",
+                "name": "language",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "language",
+                "base": [
+                    "Patient"
+                ],
+                "type": "token",
+                "expression": "Patient.communication.language",
+                "xpath": "f:Patient/f:communication/f:language",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Patient-link",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Patient-link",
+                "url": "http://hl7.org/fhir/SearchParameter/Patient-link",
+                "version": "4.0.1",
+                "name": "link",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "link",
+                "base": [
+                    "Patient"
+                ],
+                "type": "reference",
+                "expression": "Patient.link.other",
+                "xpath": "f:Patient/f:link/f:other",
+                "xpathUsage": "normal",
+                "target": [
+                    "Patient",
+                    "RelatedPerson"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Patient-name",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Patient-name",
+                "url": "http://hl7.org/fhir/SearchParameter/Patient-name",
+                "version": "4.0.1",
+                "name": "name",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "name",
+                "base": [
+                    "Patient"
+                ],
+                "type": "string",
+                "expression": "Patient.name",
+                "xpath": "f:Patient/f:name",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/Patient-organization",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "Patient-organization",
+                "url": "http://hl7.org/fhir/SearchParameter/Patient-organization",
+                "version": "4.0.1",
+                "name": "organization",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "organization",
+                "base": [
+                    "Patient"
+                ],
+                "type": "reference",
+                "expression": "Patient.managingOrganization",
+                "xpath": "f:Patient/f:managingOrganization",
+                "xpathUsage": "normal",
+                "target": [
+                    "Organization"
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-phone",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-phone",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-phone",
+                "version": "4.0.1",
+                "name": "phone",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "phone",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "PractitionerRole",
+                    "RelatedPerson"
+                ],
+                "type": "token",
+                "expression": "Patient.telecom.where(system='phone') | Person.telecom.where(system='phone') | Practitioner.telecom.where(system='phone') | PractitionerRole.telecom.where(system='phone') | RelatedPerson.telecom.where(system='phone')",
+                "xpath": "f:Patient/f:telecom[system/@value='phone'] | f:Person/f:telecom[system/@value='phone'] | f:Practitioner/f:telecom[system/@value='phone'] | f:PractitionerRole/f:telecom[system/@value='phone'] | f:RelatedPerson/f:telecom[system/@value='phone']",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-phonetic",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-phonetic",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-phonetic",
+                "version": "4.0.1",
+                "name": "phonetic",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "phonetic",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "RelatedPerson"
+                ],
+                "type": "string",
+                "expression": "Patient.name | Person.name | Practitioner.name | RelatedPerson.name",
+                "xpath": "f:Patient/f:name | f:Person/f:name | f:Practitioner/f:name | f:RelatedPerson/f:name",
+                "xpathUsage": "phonetic"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/SearchParameter/individual-telecom",
+            "resource": {
+                "resourceType": "SearchParameter",
+                "id": "individual-telecom",
+                "url": "http://hl7.org/fhir/SearchParameter/individual-telecom",
+                "version": "4.0.1",
+                "name": "telecom",
+                "status": "retired",
+                "experimental": false,
+                "date": "2019-11-01T09:29:23+11:00",
+                "description": "none",
+                "code": "telecom",
+                "base": [
+                    "Patient",
+                    "Person",
+                    "Practitioner",
+                    "PractitionerRole",
+                    "RelatedPerson"
+                ],
+                "type": "token",
+                "expression": "Patient.telecom | Person.telecom | Practitioner.telecom | PractitionerRole.telecom | RelatedPerson.telecom",
+                "xpath": "f:Patient/f:telecom | f:Person/f:telecom | f:Practitioner/f:telecom | f:PractitionerRole/f:telecom | f:RelatedPerson/f:telecom",
+                "xpathUsage": "normal"
+            },
+            "request": {
+                "method": "POST",
+                "url": "SearchParameter"
+            }
+        }
+    ]
+}
